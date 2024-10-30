@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>demo page</title>
+</head>
+<body>
+{{notification}}
+<form action="" method="post">
+    {% csrf_token %}
+   {{form.as_p}}
+   <input type="submit" value="save"/>
+</form>
+
+</body>
+</html>
